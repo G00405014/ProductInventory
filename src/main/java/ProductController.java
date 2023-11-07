@@ -15,4 +15,8 @@ public class ProductController {
         ProductService.addProduct(product);
         return"Product added";
     }
+    @GetMapping("/getProduct")
+    publicList<Product>getProductByld(){
+        return  productService.getProductByld;
+    }
 }

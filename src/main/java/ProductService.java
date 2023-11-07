@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 public class ProductService {
+    public publicList<Product> getProductByld;
+
     public void addProduct() {
         System.out.println("Sending Welcome");
-
     }
 }
