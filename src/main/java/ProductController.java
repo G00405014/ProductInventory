@@ -9,4 +9,10 @@ public class ProductController {
     public void setProductService(ProductService productService){
         this.productService = productService;
     }
+
+    @PostMapping("/addProduct")
+    public String addProduct(@RequestBody Product product){
+        ProductService.addProduct(product);
+        return"Product added";
+    }
 }
